@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="EagleEatsProjectSpring2022.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand">Eagle Eats</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Deliveries <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="PlaceOrder.aspx">Place an Order</a></li>
+                                    <li><a href="driverDeliveries.aspx">Pending Orders</a></li>
+                                    <li><a href="completedDeliveries.aspx">Completed Orders</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="DriverRoutes.aspx">Routes</a></li>
+                            <li><a href="PayMethod.aspx">Payment Methods</a></li>
+                            <li><a href="Object.aspx">Objects</a></li>
+                            <li><a href="Review.aspx">Reviews</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                            <li><a href="Default.aspx"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
